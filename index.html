@@ -1,235 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Richa Gupta</title>
+    <title>Richa | Portfolio</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: "Outfit", sans-serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-        }
-        .navbar{
-            background-color: #360185;
-            height: 60px;
-        }
-        .head{
-            font-weight:600;
-            color: #F4B342;
-            font-size: 40px;
-            align-items: center;
-            align-content: center;
-        }
-        .profile{
-            border-radius: 50%;
-            width: 300px;
-        }
-        .Headname{
-            font-size: 10vw;
-        }
-        .chips{
-            width: fit-content;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-left: auto;
-            margin-right: auto;
-            align-content: center;
-            
-            .chip{
-                width: fit-content;
-                height: 25px;
-                padding: 5px;
-                font-size: 20px;
-                color: white;
-                border-radius: 8px;
-                margin: 5px;
-            }
-        }
-        .resume{
-            background-color: #DE1A58;
-            color: white;
-            padding: 10px;
-            width: fit-content;
-            border-radius: 8px;
-            
-        }
-        a{
-            text-decoration: none;
-        }
-        .projects{
-            .Pro{
-                font-size: 40px;
-                background-color: #360185;
-                color: white;
-                width: fit-content;
-                padding: 10px;
-                border-radius: 8px;
-            }
-            .p{
-                display: flex;
-                align-items: center;
-                padding: 10px;
-                margin: 10px;
-                border: 2px solid rgba(128, 128, 128, 0.336);
-                border-radius: 10px;
-                .left{
-                    .name{
-                        font-size: 40px;
-                        font-weight: 600;
-                        text-align: left;
-                    }
-                    .desc{
-                        text-align: left;
-                    }
-                }
-                img{
-                    width: 300px;
-                    border-radius: 10px;
-                }
-            }
-        }
-        @media (max-width:550px) {
-           .p{
-            display: block !important;
-           }
-            
-        }
-        .footer{
-            background-color: #360185;
-            color: white;
-            padding: 20px;
-        }
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+    color: #333;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #222;
+}
+
+nav .logo {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+}
+
+.hero span {
+    color: #ffd700;
+}
+
+
+.section {
+    padding: 50px 80px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.gray {
+    background: #f1f1f1;
+}
+
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-container span {
+    background: #667eea;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px;
+    border-radius: 20px;
+}
+
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.card {
+   background-color: #b7bfe4;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+}
+
     </style>
+    
 </head>
+    
 <body>
-    <div class="navbar">
-        <center>
-            <p class="head">&LeftArrowBar; Richa Gupta &RightArrowBar;</p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <img src="photo_2023-10-13_20-31-29.jpg" alt="" class="profile">
-            <br>
-            <div class="Headname">
-                Richa Gupta
-            </div>
-          
-                <div class="chips">
-                    <div class="chip" style="background-color: red;">Web Developer</div>
-                    <div class="chip" style="background-color: #360185;">Data Analyst</div>
-                    <div class="chip" style="background-color: orangered;">Ai Ml Engineer</div>
-                    <div class="chip" style="background-color: #DE1A58;">Tally Accountant</div>
-                    <div class="chip" style="background-color: #DE1A58;">Full Stack Python Developer</div>
-                    <div class="chip" style="background-color: #F4B342;">Full Stack Java Developer</div>
-                </div>
-            <img src="https://cdn.dribbble.com/userupload/21912385/file/original-3b2730a6850b7c4e28680b46c054f886.gif" alt="" width="200px">
 
-            <br>
-            <a href="photo_2023-10-13_20-31-29.jpg" download>
-                <div class="resume">
-                    Download Resume
-                </div>
-            </a>
-<br>
-<br>
-<br>
-<br>
-            <div class="projects">
-                <div class="Pro">Projects</div>
-                <div class="p">
-                    <div class="left">
-                        <div class="name">Moduler Login Page</div>
-                        <br>
-                        <br>
-                        <div class="desc">
-                           A Login Page is a web page where users enter their Username/Email and Password to access a website, app, or system.
-                           It helps keep user data secure by allowing only authorized people to enter.
-                           Security – Protects personal data
-                          ✔ Authentication – Checks if user is real and allowed
-                         ✔ Access Control – Gives access to dashboard or account area
-                         ✔ User Tracking – Helps identify users for personalization
-                        </div>
-                    </div>
-                    <div class="img">
-                        <img src="https://i.ytimg.com/vi/V8PU_geaCCU/maxresdefault.jpg" alt="">
-                    </div>
-                </div>
-                <div class="p">
-                    <div class="left">
-                        <div class="name">Sign up with T & fb</div>
-                        <br>
-                        <br>
-                        <div class="desc">
-                            Social Media Signup means creating an account on a website or app using your Twitter or Facebook login instead of filling a long registration form.
+<!-- NAVBAR -->
+<nav>
+    <h2 class="logo">Portfolio</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-                            It uses a technology called OAuth (Open Authorization).Your code stays neat and professional.
-                        </div>
-                    </div>
-                    <div class="img">
-                        <img src="image1.png" alt="">
-                    </div>
-                </div>
-                <div class="p">
-                    <div class="left">
-                        <div class="name"> Signup page</div>
-                        <br>
-                        <br>
-                        <div class="desc">
-                            A Sign-Up Page is a web page where new users can create an account by entering required information such as name, email, mobile number, password, etc.
+<!-- HERO -->
+<section class="hero">
+    <h1>Hello, I'm <span>Richa</span></h1>
+    <p>Instructor | Excel | Power BI | Tableau | HTML & CSS</p>
+</section>
 
-                            It is the first step for users to register and get access to the features of a website or application.
-                        </div>
-                    </div>
-                    <div class="img">
-                        <img src="image2.png" alt="">
-                    </div>
-                </div>
-                <div class="p">
-                    <div class="left">
-                        <div class="name"> Register Page</div>
-                        <br>
-                        <br>
-                        <div class="desc">
-                            A Register Page (also called Sign-Up Page) is a screen or form where new users create an account by entering their personal information.
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I am a professional instructor with experience teaching Excel, Power BI,
+        Tableau, and basic computer courses at an institute. I have also learned
+        HTML and CSS and am building web projects to enhance my technical profile.
+        I enjoy teaching, continuous learning, and creating practical solutions.
+    </p>
+</section>
 
-                            It is usually the first step before using any app or website.Your code stays neat and professional.
-                        </div>
-                    </div>
-                    <div class="img">
-                        <img src="image3.png" alt="">
-                    </div>
-                </div>
-                <div class="p">
-                    <div class="left">
-                        <div class="name">Moduler Login Form</div>
-                        <br>
-                        <br>
-                        <div class="desc">
-                           A Modular Login Form is a login system designed in separate, reusable modules instead of one big block of code.
-                           It means the login page is built from small components (modules) like:
 
-                            Input box module,Error message module,Validation module,API connection module,UI container module,Button module
-
-                        </div>
-                    </div>
-                    <div class="img">
-                        <img src="image.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                &copy; Copyright 2025, Made By Richa Gupta with ❤️. <br>
-                For Projects Connect @ Phone : +91 8097926437 Email : guptaricha1604@gmail.com
-            </div>
-        </center>
+<section id="skills" class="section gray">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <span>MS Excel</span>
+        <span>Power BI</span>
+        <span>Tableau</span>
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>Python</span>
+        <span>Basic Computer Training</span>
     </div>
+</section>
+
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio using HTML & CSS.</p>
+        </div>
+        <div class="card">
+            <h3>Excel Dashboard</h3>
+            <p>Sales & performance dashboard in Excel.</p>
+        </div>
+        <div class="card">
+            <h3>Power BI Report</h3>
+            <p>Interactive reports with charts and filters.</p>
+        </div>
+        <div class="card">
+            <h3>Tablue Report</h3>
+            <p>Interactive reports with charts and filters.</p>
+        </div>
+         <div class="card">
+            <h3>Login Page</h3>
+            <p>Login page by using HTML & CSS.</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="section gray">
+    <h2>Contact</h2>
+    <p>Email: guptaricha1604@gmail.com</p>
+    <p>Phone: +91 8097926437</p>
+    <p>GitHub: github.com/richa-1607</p>
+</section>
+
+<footer>
+    <p>© 2026 Richa | All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
